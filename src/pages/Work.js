@@ -11,7 +11,7 @@ const { Content } = Layout;
 const works = [
     {
         title: 'Projet 1',
-        description: 'Description du projet 1.',
+        description: 'En cours ...',
     },
     {
         title: 'Projet 2',
