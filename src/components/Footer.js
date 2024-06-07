@@ -7,7 +7,7 @@ const { Footer } = Layout;
 export default function AppFooter() {
     return (
         <div className="footer">
-            <Footer>
+            {/* <Footer> */}
                 <div className='footerContent'>
                     <div>© 2024 | by Rayan RAVELONIRINA <SmileOutlined /></div>
                     <div>
@@ -16,7 +16,7 @@ export default function AppFooter() {
                         </Button>
                     </div>
                 </div>
-            </Footer>
+            {/* </Footer> */}
         </div>
     );
 }

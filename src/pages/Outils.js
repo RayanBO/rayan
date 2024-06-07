@@ -5,6 +5,7 @@ import AppFooter from '../components/Footer';
 
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
+import { bgf } from '../components/Utils'
 
 
 const { Content, Footer } = Layout;
@@ -37,7 +38,7 @@ const tools = [
 export default function Outils() {
     const navigate = useNavigate();
     return (
-        <Layout className="layout">
+        <Layout className="layout bg" >
             <Header currentpage={'/tools'} />
             <Content style={{ padding: '0 50px' }}>
                 <div style={{ display: "flex", alignItems: 'center', justifyContent: 'space-between' }}>
@@ -47,12 +48,12 @@ export default function Outils() {
                 <div className="site-layout-content">
                     <div>
                         {tools.map((tool) => (
-                            <div key={tool.category}>
+                            <div key={tool.category} style={{ backgroundColor: "transparent" }}>
                                 <h2>{tool.category}</h2>
                                 <Row gutter={[16, 16]}>
                                     {tool.items.map((item) => (
                                         <Col span={8} key={item.name}>
-                                            <Card title={item.name}>
+                                            <Card style={bgf} title={item.name}>
                                                 <p>{item.description}</p>
                                             </Card>
                                         </Col>

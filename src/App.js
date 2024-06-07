@@ -9,7 +9,7 @@ import Outils from "./pages/Outils";
 const App = () => {
   return (
     <Router>
-      <div className="App">
+      <>
         <Routes>
           <Route
             path="/"
@@ -30,7 +30,7 @@ const App = () => {
             }
           />
         </Routes>
-      </div>
+      </>
     </Router>
   );
 };

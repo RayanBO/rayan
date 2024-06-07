@@ -5,6 +5,8 @@ import AppFooter from '../components/Footer';
 
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
+import { bgf } from '../components/Utils'
+
 
 const { Content } = Layout;
 
@@ -39,7 +41,7 @@ const works = [
 export default function Work() {
     const navigate = useNavigate();
     return (
-        <Layout className="layout">
+        <Layout className="layout bg">
             <Header currentpage={'/work'} />
             <Content style={{ padding: '0 50px' }}>
                 <div className="site-layout-content">
@@ -50,7 +52,7 @@ export default function Work() {
                     <Row gutter={[16, 16]}>
                         {works.map((work) => (
                             <Col span={8} key={work.title}>
-                                <Card title={work.title}>
+                                <Card  style={bgf} title={work.title}>
                                     <p>{work.description}</p>
                                 </Card>
                             </Col>

@@ -10,14 +10,14 @@ export default function Header({ currentpage }) {
 
 
   return (
-    <div style={{ margin: "24px", display: "flex", justifyContent: "space-between" }}>
+    <div style={{ margin: "24px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
       <Button type="link"
         onClick={() => navigate('/')}
-        style={{ color: "black" }}>
-        <div className='header-title'>
-        <HomeOutlined size='12px'/>
-        </div>
+        style={{ color: "black" , fontSize: "12px" }}
+        icon={<HomeOutlined />}
+      >
+        Acceuil
       </Button>
 
       <div className='Navigation'>

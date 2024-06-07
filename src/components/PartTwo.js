@@ -1,28 +1,30 @@
 import React from 'react';
 import { Card, Divider, Typography, Tag, Row, Col } from 'antd';
+import { bgf } from './Utils'
 
 const { Title, Text } = Typography;
+
 
 const PartTwo = () => {
     return (
         <div>
-            <Card>
+            <Card className='block' style={bgf}>
                 <Title level={4}>Projets d'entreprise</Title>
                 <Row gutter={16}>
                     <Col span={8}>
-                        <Card type="inner" title="Stallion RH" bordered={false}>
+                        <Card style={bgf} type="inner" title="Stallion RH" bordered={false}>
                             <img alt="Stallion RH" src="stallion-rh-logo.png" style={{ width: '100%', marginBottom: '15px' }} />
                             <Text>UMO-Interim est une équipe de professionnels passionnés et spécialisés dans les services et le conseil en ressources humaines. Ils proposent des services de recrutement, de formation, de gestion de la paie et d'intérim.</Text>
                         </Card>
                     </Col>
                     <Col span={8}>
-                        <Card type="inner" title="Les Tribunaux de Madagascar" bordered={false}>
+                        <Card style={bgf} type="inner" title="Les Tribunaux de Madagascar" bordered={false}>
                             <img alt="Les Tribunaux de Madagascar" src="tribunaux-madagascar-logo.png" style={{ width: '100%', marginBottom: '15px' }} />
                             <Text>Digitalisation des tribunaux de Madagascar TPI, TA, TF et PAC.</Text>
                         </Card>
                     </Col>
                     <Col span={8}>
-                        <Card type="inner" title="Prochainement..." bordered={false}>
+                        <Card style={bgf} type="inner" title="Prochainement..." bordered={false}>
                             <img alt="Prochainement" src="prochainement.png" style={{ width: '100%', marginBottom: '15px' }} />
                             <Text>Prochain projet à venir.</Text>
                         </Card>
@@ -30,7 +32,7 @@ const PartTwo = () => {
                 </Row>
             </Card>
             <Divider />
-            <Card>
+            <Card className='block' style={bgf}>
                 <Title level={4}>Certifications - Etudes</Title>
                 <ul>
                     <li>Certificat Python - Sololearn, En ligne, 2024</li>
@@ -42,7 +44,7 @@ const PartTwo = () => {
                 </ul>
             </Card>
             <Divider />
-            <Card>
+            <Card className='block' style={bgf}>
                 <Title level={4}>Compétences</Title>
                 <Text>Languages</Text>
                 <div>
